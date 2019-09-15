@@ -21,6 +21,7 @@ function convertLetters(letter) {
     return "Scissors";
 }
 
+// function that executes when user has won the game
 function win(userChoice, computerChoice) {
     userScore++;
     console.log("Win")
@@ -36,6 +37,7 @@ function win(userChoice, computerChoice) {
     }, 300);
 }
 
+// function that executes when user lost the game
 function lose(userChoice, computerChoice) {
     compScore++;
     console.log("Lose")
@@ -51,6 +53,7 @@ function lose(userChoice, computerChoice) {
     }, 300);
 }
 
+// function when user and comp chooses the same choice = draw
 function draw(userChoice, computerChoice) {
     console.log("Draw")
     const smallUserChoice = "user".fontsize(3).sub();
